@@ -1,0 +1,8 @@
+name: Second Workflow
+on: [issues]
+jobs:
+  issues_workflow:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Showing metadata from Github
+        run: echo "${{github}}"
